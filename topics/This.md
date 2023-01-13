@@ -34,4 +34,4 @@ What determines **this** value:
   context_inner { b: 1 }
 ```
 
-3) If a function is called with an object, the *this* value is of that object.
+3) If an object calls a function, for example, its internal method, the *this* value is of that object.
