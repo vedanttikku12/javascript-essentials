@@ -9,8 +9,8 @@ Here is where Async and Defer come into the picture.
 
 **Defer**
 
-> Render non-blocking
-> Document Order in execution
+-> Render non-blocking
+-> Document Order in execution
 
 A script with defer attribute would make sure that it loads without blocking render.
 
@@ -29,8 +29,8 @@ Here if small.js loads first, long.js will still be executed before, thereby mai
 
 **Async**
 
-> Render non-blocking
-> Download Order in execution
+-> Render non-blocking
+-> Download Order in execution
 
 A script with async will execute independently.
 It is non-blocking and has no relation to the DOMContentLoaded event.
