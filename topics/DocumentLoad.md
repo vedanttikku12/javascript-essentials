@@ -36,3 +36,12 @@ It has three values:
 2) Interactive (DOMContentLoaded is called here)
 3) Complete (load event is called here)
 
+
+
+**pageHide**
+
+event triggered when window/iframe is closed or navigation to different location is done.
+
+First pageHide event is to be ignored because it indicates that the page moved from a blank document to a url. In this case, host will be undefined.
+
+This is not fired in case the popup is of a different url. Use *window.closed* in such a case.

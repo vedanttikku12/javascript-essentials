@@ -25,8 +25,14 @@ When the first content appears
 Benchmark -> 1.8 seconds
 
 
+**Largest Contentful Paint (LCP)**
 
+Benchmark -> 2.5 seconds - 4 seconds
 
+Considers text blocks, images, videos, image tags inside svg
+
+Does not currently consider svgs
+Does not consider background tabs
 
 
 **Preloading**
@@ -37,7 +43,7 @@ If a resource will surely be fetched but is placed later, we can fetch it before
 <link rel="preload" href="media.css"/>
 ```
 
-As we load critical CSS which is used for ATF (Above the fold) content in the head tag, we can fetch non-critical css using preload, so that when user scrolls down, it does not have to wait for JS to down and execute and then fetch the non-critical CSS.
+As we load critical CSS which is used for ATF (Above the fold) content in the head tag, we can fetch non-critical css using preload, so that when user scrolls down, it does not have to wait for JS to download and execute and then fetch the non-critical CSS.
 
 > Preload fonts
 
